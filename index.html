@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+        <li style="--i:0;">
+            <a href="https://www.instagram.com/accounts/login/"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:1;">
+            <a href="https://www.amazon.in/ref=nav_logo"><ion-icon name="logo-amazon"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:2;">
+            <a href="https://in.linkedin.com/?trk=guest_homepage-basic_nav-header-logo"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:3;">
+            <a href="https://www.google.co.in/"><ion-icon name="logo-google"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:4;">
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:5;">
+            <a href="https://www.skype.com/en/"><ion-icon name="logo-skype"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:6;">
+            <a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
+        </li>
+        <li style="--i:7;">
+            <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:8;">
+            <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></ion-icon></a>
+        </li>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function(){
+            menu.classList.toggle('active') 
+        }
+    </script>
+</body>
+</html>
